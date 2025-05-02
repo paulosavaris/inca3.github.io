@@ -111,4 +111,79 @@ body {
   }
   
   
+  .empresas-grupo {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .empresas-grupo h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+  
+  .empresa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 40px;
+  }
+  
+  .linha-normal {
+    flex-direction: row;
+  }
+  
+  .linha-invertida {
+    flex-direction: row-reverse;
+  }
+  
+  .empresa .texto,
+  .empresa .imagem {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagem img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+
+  /* Responsivo para mobile */
+  @media (max-width: 768px) {
+    .empresa {
+      flex-direction: column;
+    }
+  
+    .linha-invertida .imagem {
+      order: 2;
+    }
+  
+    .linha-invertida .texto {
+      order: 1;
+    }
+  
+    .linha-normal .imagem {
+      order: 2;
+    }
+  
+    .linha-normal .texto {
+      order: 1;
+    }
+  
+    .empresa .texto,
+    .empresa .imagem {
+      text-align: center;
+    }
+  }
+  
   
