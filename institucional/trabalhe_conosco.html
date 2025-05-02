@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabalhe Conosco - Inca 3</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Inca 3</div>
+    <nav id="menu">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../empresas/basemix.html">Basemix</a></li>
+        <li><a href="../empresas/pedreira.html">Pedreira</a></li>
+        <li><a href="../empresas/kaeng.html">Kaeng</a></li>
+      </ul>
+    </nav>
+    <button id="btn-mobile">☰</button>
+  </header>
+
+  <main>
+    <section>
+      <h1>Trabalhe Conosco</h1>
+      <p>Confira abaixo as vagas abertas e envie seu currículo!</p>
+
+      <div class="vagas">
+        <h2>Vagas Disponíveis</h2>
+        <ul>
+          <li><strong>Motorista de Caminhão</strong> – Basemix – Uberlândia/MG</li>
+          <li><strong>Auxiliar de Produção</strong> – Pedreira Triângulo – Araguari/MG</li>
+          <li><strong>Estágio em Engenharia Civil</strong> – Inca 3 – Uberlândia/MG</li>
+        </ul>
+      </div>
+
+      <form id="form-trabalhe" class="formulario">
+        <h2>Envie seu Currículo</h2>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="vaga">Vaga de Interesse:</label>
+        <input type="text" id="vaga" name="vaga" placeholder="Ex: Estágio em Engenharia Civil" required />
+
+        <label for="curriculo">Link do Currículo (Google Drive ou PDF):</label>
+        <input type="url" id="curriculo" name="curriculo" placeholder="https://..." required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Inca 3 Holding - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
