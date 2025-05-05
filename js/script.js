@@ -1,8 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("menu-toggle");
-  const menu = document.getElementById("menu-principal");
+// script.js
 
-  toggleButton.addEventListener("click", function () {
-    menu.classList.toggle("active");
-  });
+document.getElementById("menu-toggle").addEventListener("click", function() {
+  const menu = document.getElementById("menu-principal");
+  menu.classList.toggle("active");
 });
