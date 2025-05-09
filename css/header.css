@@ -4,6 +4,18 @@ body {
     margin: 0;
 }
 
+#menu-slide {
+    position: fixed;
+    top: 0;
+    left: -340px;
+    /* escondido inicialmente */
+    width: 306px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    transition: left 0.3s ease;
+}
+
 
 /* Header */
 header.header-normal {
@@ -15,6 +27,39 @@ header.header-normal {
     z-index: 10;
     top: 0;
 }
+
+#div-topbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+#menu-topbar-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#menu-topbar-header ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+#menu-topbar-header a {
+    text-decoration: none;
+    color: #444;
+    transition: color 0.3s;
+}
+
+#menu-topbar-header a:hover {
+    color: #007BFF;
+}
+
 
 /* Oculta menu mobile por padrão */
 .menu-mobile {
@@ -37,40 +82,9 @@ header.header-normal {
 }
 
 
-/* Topbar */
-#div-topbar-teste {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 2rem;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-#menu-topbar-teste {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-#menu-topbar-teste ul {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-}
-
-#menu-topbar-teste a {
-    text-decoration: none;
-    color: #444;
-    transition: color 0.3s;
-}
-
-#menu-topbar-teste a:hover {
-    color: #007BFF;
-}
 
 /* Topbar */
-#menu-teste {
+#menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,29 +92,24 @@ header.header-normal {
     flex-wrap: wrap;
 }
 
-#logo img {
+#logo_header-desktop img {
     height: 60px;
     width: auto;
 }
 
-#logo-teste img {
-    height: 60px;
-    width: auto;
-}
-
-#menu-principal-teste {
+#menu-principal {
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
 }
 
-#menu-principal-teste ul {
+#menu-principal ul {
     display: flex;
     list-style: none;
     gap: 1.5rem;
 }
 
-#menu-principal-teste a {
+#menu-principal a {
     text-decoration: none;
     font-weight: 500;
     color: #222;
@@ -129,19 +138,6 @@ header.header-normal {
     -webkit-touch-callout: none;
 }
 
-
-
-#menu-slide {
-    position: fixed;
-    top: 0;
-    left: -340px;
-    /* escondido inicialmente */
-    width: 306px;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 9;
-    transition: left 0.3s ease;
-}
 
 
 

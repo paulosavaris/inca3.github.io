@@ -6,55 +6,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kaeng - Inca 3</title>
 
-  <link rel="stylesheet" href="../sass/_partials/header.scss" />
-  <link rel="stylesheet" href="../sass/padroes.scss" />
+  <link rel="stylesheet" href="../css/header.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
   <script src="../js/script.js"></script>
+  <script src="../js/menu_slide.js"></script>
 </head>
 
 <body>
 
-  <header class="header-normal fulldiv">
-    <!-- Topbar com navegação secundária e redes sociais -->
-    <div id="div-topbar" class="fulldiv">
-      <nav id="menu-topbar" role="navigation" aria-label="Navegação superior">
-        <div class="collapse navbar-collapse">
-          <ul id="topbar" class="nav navbar-nav">
-            <li id="menu-item-inicio" class="menu-item"><a href="../index.html">Inca3</a></li>
-            <li id="menu-item-basemix" class="menu-item"><a href="basemix.html">Basemix</a></li>
-            <li id="menu-item-pedreira" class="menu-item"><a href="pedreira.html">Pedreira Triângulo</a></li>
-            <li id="menu-item-kaeng" class="menu-item"><a href="Kaeng.html">Kaeng</a></li>
-            <li id="menu-item-trabalhe" class="menu-item cadastro"><a
-                href="../institucional/trabalhe_conosco.html">Trabalhe Conosco</a></li>
-          </ul>
+  <div id="menu-slide"></div>
+    <header class="header-normal">
+        <!-- Menu Desktop (visível sempre) -->
+        <div id="div-topbar-header" class="header-desktop">
+            <!-- <nav id="menu-topbar" role="navigation" aria-label="Navegação superior"> -->
+            <div id="menu-topbar-header">
+                <ul id="topbar-header">
+                    <li><a href="../index.html">Inca3</a></li>
+                    <li><a href="basemix.html">Basemix</a></li>
+                    <li><a href="pedreira.html">Pedreira Triângulo</a></li>
+                    <li><a href="Kaeng.html">Kaeng</a></li>
+                    <!-- <li><a href="../institucional/trabalhe_conosco.html">Trabalhe Conosco</a></li> -->
+                </ul>
+            </div>
+            <!-- </nav> -->
         </div>
-      </nav>
-    </div>
 
-    <!-- Logo e menu principal -->
-    <div id="menu" class="fulldiv">
-      <div id="logo">
-        <a href="Kaeng.html" aria-label="Página da Basemix">
-          <img src="../galeria/kaeng/Logo.png" alt="Logo da Basemix">
-        </a>
-      </div>
+        <div id="menu" class="header-desktop">
 
-      <nav id="menu-principal" role="navigation" aria-label="Menu principal">
-        <div class="collapse navbar-collapse">
-          <ul id="primary" class="nav navbar-nav">
-            <li id="menu-item-institucional" class="menu-item menu-item-has-children">
-              <a href="#">Institucional</a>
-            </li>
-            <li id="menu-item-produtos" class="menu-item menu-item-has-children">
-              <a href="#">Produtos</a>
-            </li>
-            <li id="menu-item-servicos" class="menu-item menu-item-has-children">
-              <a href="#">Serviços</a>
-            </li>
-          </ul>
+            <div id="logo_header-desktop">
+                <a href="Kaeng.html" aria-label="Página da Kaeng">
+                    <img src="../galeria/kaeng/Logo.png" alt="Logo da Kaeng">
+                </a>
+            </div>
+
+            <nav id="menu-principal" role="navigation" aria-label="Menu principal">
+                <div>
+                    <ul>
+                        <li><a href="#">Institucional</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Serviços</a></li>
+                    </ul>
+                </div>
+            </nav>
+
         </div>
-      </nav>
-    </div>
-  </header>
+
+        <!-- Menu Mobile (hambúrguer) -->
+        <div class="menu-mobile">
+            <input type="checkbox" id="menu-toggle" />
+
+            <div class="mobile-header">
+                <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <div class="mobile-logo">
+                    <a href="Kaeng.html" aria-label="Página da Basemix">
+                        <img src="../galeria/kaeng/Logo.png" alt="Logo da Basemix">
+                    </a>
+                </div>
+            </div>
+
+            <nav class="mobile-menu-content">
+                <ul>
+                    <!-- Itens do topbar -->
+                    <li><a href="../index.html">Inca3</a></li>
+                    <li><a href="basemix.html">Basemix</a></li>
+                    <li><a href="pedreira.html">Pedreira Triângulo</a></li>
+                    <li><a href="Kaeng.html">Kaeng</a></li>
+                    <!-- <li><a href="../institucional/trabalhe_conosco.html">Trabalhe Conosco</a></li> -->
+                    <hr />
+                    <!-- Itens do menu principal -->
+                    <li><a href="#">Institucional</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
 
   <main>
     <!-- INSTITUCIONAL -->

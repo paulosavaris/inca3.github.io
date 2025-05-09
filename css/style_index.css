@@ -75,41 +75,6 @@ body {
     transform: scale(1.02); /* Efeito suave ao passar o mouse */
   }
 
-  footer {
-    background: #dbdad9;
-    color: rgb(0, 0, 0);
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .footer-contato a {
-    color: #337ab7;
-    text-decoration: none;
-  }
-  
-  .footer-contato ul {
-    list-style: none;
-    padding: 0;
-    margin: 0.5rem 0;
-  }
-  
-  .footer-contato li {
-    margin-bottom: 0.3rem;
-  }
-  .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: left;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .footer-col {
-    flex: 1 1 300px;
-    padding: 1rem;
-  }
-  
   
   .empresas-grupo {
     padding: 40px 20px;
