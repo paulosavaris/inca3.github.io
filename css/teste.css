@@ -197,3 +197,103 @@ a {
 }
 
 
+/* #galeria {
+    padding: 2rem;
+    background: #f4f4f4;
+  }
+  
+  #galeria h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .galeria-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem;
+    -webkit-overflow-scrolling: touch; /* melhora o swipe no iOS */
+  
+  /* .galeria-carousel img {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    scroll-snap-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  } */
+/* 
+  #galeria {
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .galeria-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .galeria-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+  
+  .galeria-carousel img {
+    flex: 0 0 auto;
+    width: calc(25% - 1rem); 4 por vez em telas grandes
+    min-width: 200px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .galeria-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    font-size: 2rem;
+    padding: 0.2rem 0.8rem;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
+  
+  .galeria-btn.prev {
+    left: 0;
+  }
+  
+  .galeria-btn.next {
+    right: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .galeria-carousel img {
+      width: calc(50% - 1rem); 2 por vez em tablets
+    }
+  
+    .galeria-btn {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .galeria-carousel img {
+      width: 100%; 1 por vez no celular
+    }
+  } */

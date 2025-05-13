@@ -1,0 +1,152 @@
+ /* .galeria-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+.galeria-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.galeria-carousel img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.galeria-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.galeria-btn.prev {
+  left: 10px;
+}
+
+.galeria-btn.next {
+  right: 10px;
+} 
+
+#galeria {
+  padding: 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+
+
+.galeria-carousel img {
+  flex: 0 0 auto;
+  width: calc(25% - 1rem);
+  min-width: 200px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.galeria-btn.prev {
+  left: 0;
+}
+
+.galeria-btn.next {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .galeria-carousel img {
+    width: calc(50% - 1rem);
+
+  }
+
+  .galeria-btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-carousel img {
+    width: 100%;
+
+  }
+} */
+
+#galeria {
+  padding: 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.galeria-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+.galeria-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.galeria-carousel img {
+  flex: 0 0 auto;
+  width: calc(33.33% - 1rem); /* 3 imagens por vez */
+  min-width: 200px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões de navegação */
+.galeria-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.galeria-btn.prev {
+  left: 10px;
+}
+
+.galeria-btn.next {
+  right: 10px;
+}
+
+/* Responsivo: 2 imagens no tablet */
+@media (max-width: 768px) {
+  .galeria-carousel img {
+    width: calc(50% - 1rem);
+  }
+}
+
+/* Responsivo: 1 imagem no celular */
+@media (max-width: 480px) {
+  .galeria-carousel img {
+    width: 100%;
+  }
+}
